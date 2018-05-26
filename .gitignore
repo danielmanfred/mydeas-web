@@ -44,4 +44,4 @@ testem.log
 Thumbs.db
 
 # Dependencies files
-/package-lock.json
+.package-lock.json
