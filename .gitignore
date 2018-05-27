@@ -42,8 +42,3 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-
-# Dependencies files
-.package-lock.json
-.package.json
-admin.ts
