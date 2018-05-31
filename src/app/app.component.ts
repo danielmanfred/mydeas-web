@@ -1,29 +1,16 @@
-import { Component } from '@angular/core'
+import {Component, OnInit} from "@angular/core"
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css']
+  selector: 'mt-app',
+  templateUrl: 'app.component.html'
 })
+export class AppComponent implements OnInit {
 
-export class AppComponent {
-    arthur = {
-        name: 'Arthur Dent',
-        email: 'arthurdent@gmail.com',
-        gender: 'M',
-        isAdmin: false
-    }
+  content = 'Bem-vindo a Plataforma Mydeas!'
 
-    ford = {
-        name: 'Ford Prefect',
-        email: 'fordprefect@gmail.com',
-        isAdmin: true
-    }
+  constructor() { }
 
-    trillian = {
-        name: 'Trillian',
-        email: 'trillian@gmail.com',
-        gender: 'F',
-        isAdmin: false
-    }
+  ngOnInit() {
+  }
+
 }

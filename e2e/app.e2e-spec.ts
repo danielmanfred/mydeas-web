@@ -1,14 +1,14 @@
-import { AppPage } from './app.po';
+import { MydeasPage } from './app.po';
 
-describe('mydeas-web App', () => {
-  let page: AppPage;
+describe('mydeas App', function() {
+  let page: MydeasPage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new MydeasPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toEqual('mt works!');
   });
 });
