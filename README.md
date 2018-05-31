@@ -1,4 +1,4 @@
-# Mydeas - Plataforma de serviço de busca de sócios e projetos
+# Mydeas - Plataforma de Soluções para geração de projetos e startups
 
 ### Clonando o Repositório
 
