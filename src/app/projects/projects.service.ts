@@ -1,32 +1,19 @@
+import { ErrorHandler } from './../app.error.handler';
+import { Injectable } from '@angular/core';
+import { Http } from '@angular/http'
+import { MYDEAS_API } from './../app.api';
 import { Project } from "./project/project.model";
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/map'
+import 'rxjs/add/operator/catch'
 
+@Injectable()
 export class ProjectService {
-    constructor() {}
-
-    projects: Project[] = [
-        {
-          id: "we-work",
-          name: "WeWork",
-          description: "A WeWork é uma rede global de espaços de trabalho em que empresas e pessoas crescem juntas.",
-          logo: "assets/img/projects/wework.png",
-          isActive: true,
-          tags: ["coworking", "criatividade", "produtividade"],
-          category: "Coworking",
-          owner: "Arthur Dent"
-        },
-        {
-          id: "slack",
-          name: "Slack",
-          description: "When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.",
-          logo: "assets/img/projects/slack.png",
-          isActive: true,
-          tags: ["comunicação", "empresas", "negócios"],
-          category: "Comunicação",
-          owner: "Ford Prefect"
-        }
-      ]
-
-    getProjects(): Project[] {
-        return this.projects
+    constructor(private http: Http) {}
+    
+    getProjects(): Observable<Project[]> {
+        return this.http.get(`${MYDEAS_API}/projects`)
+                        .map(response => response.json())
+                        .catch(ErrorHandler.handleError)
     }
 }
