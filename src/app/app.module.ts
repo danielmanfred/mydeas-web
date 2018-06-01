@@ -1,3 +1,4 @@
+import { ProjectService } from './projects/projects.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
@@ -27,7 +28,7 @@ import { ProjectComponent } from './projects/project/project.component'
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [ProjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

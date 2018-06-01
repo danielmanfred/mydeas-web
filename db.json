@@ -8,7 +8,8 @@
       "logo": "assets/img/projects/wework.png",
       "isActive": true,
       "tags": ["coworking", "criatividade", "produtividade"],
-      "category": "Coworking"
+      "category": "Coworking",
+      "owner": "Arthur Dent"
     },
     {
       "id": "slack",
@@ -18,7 +19,8 @@
       "logo": "assets/img/projects/slack.png",
       "isActive": true,
       "tags": ["comunicação", "empresas", "negócios"],
-      "category": "Comunicação"
+      "category": "Comunicação",
+      "owner": "Ford Prefect"
     },
     {
       "id": "nio",
@@ -28,7 +30,8 @@
       "logo": "assets/img/projects/nio.png",
       "isActive": true,
       "tags": ["veículos", "elétricos", "inteligentes"],
-      "category": "Automóveis"
+      "category": "Automóveis",
+      "owner": "Zaphod Beeblebrox"
     },
     {
       "id": "rubrick",
@@ -38,7 +41,8 @@
       "logo": "assets/img/projects/rubrick.png",
       "isActive": true,
       "tags": ["dados", "recuperação", "análise"],
-      "category": "Computação em núvem"
+      "category": "Computação em núvem",
+      "owner": "Trillian"
     }
   ],
   "menu": [
