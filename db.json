@@ -1,10 +1,10 @@
 {
   "projects": [
     {
-      "id": "we-work",
+      "id": "0001",
       "name": "WeWork",
       "description": "A WeWork é uma rede global de espaços de trabalho em que empresas e pessoas crescem juntas.",
-      "date": "2018-06-01",
+      "date": "2018-06-01T18:25:43",
       "logo": "assets/img/projects/wework.png",
       "isActive": true,
       "tags": ["coworking", "criatividade", "produtividade"],
@@ -12,10 +12,10 @@
       "owner": "Arthur Dent"
     },
     {
-      "id": "slack",
+      "id": "0002",
       "name": "Slack",
       "description": "When your team needs to kick off a project, hire a new employee, deploy some code, review a sales contract, finalize next year's budget, measure an A/B test, plan your next office opening, and more, Slack has you covered.",
-      "date": "2018-06-01",
+      "date": "2018-06-01T18:25:43",
       "logo": "assets/img/projects/slack.png",
       "isActive": true,
       "tags": ["comunicação", "empresas", "negócios"],
@@ -23,10 +23,10 @@
       "owner": "Ford Prefect"
     },
     {
-      "id": "nio",
+      "id": "0003",
       "name": "NIO",
       "description": "A empresa chinesa que migrou para os Estados Unidos há dois anos desenvolve veículos autônomos, elétricos e inteligentes.",
-      "date": "2018-06-01",
+      "date": "2018-06-01T18:25:43",
       "logo": "assets/img/projects/nio.png",
       "isActive": true,
       "tags": ["veículos", "elétricos", "inteligentes"],
@@ -34,324 +34,147 @@
       "owner": "Zaphod Beeblebrox"
     },
     {
-      "id": "rubrick",
+      "id": "0004",
       "name": "Rubrick",
       "description": "A startup ajuda empresas a organizar seus dados com aplicativos de recuperação, análise e desenvolvimento de arquivos em nuvem.",
-      "date": "2018-06-01",
+      "date": "2018-06-01T18:25:43",
       "logo": "assets/img/projects/rubrick.png",
       "isActive": true,
       "tags": ["dados", "recuperação", "análise"],
       "category": "Computação em núvem",
-      "owner": "Trillian"
+      "owner": "Tricia McMillan"
     }
   ],
-  "menu": [
+  "news": [
     {
-      "id": "cup-cake",
-      "imagePath": "assets/img/foods/cupcake.png",
-      "name": "Cup Cake",
-      "description": "Cup Cake recheado de Doce de Leite",
-      "price": 8.7,
-      "restaurantId": "bread-bakery"
+      "id": "0001",
+      "title": "Notícia 1",
+      "content": "The following is an alphabetical list of the minor characters in the various versions of The Hitchhiker's Guide to the Galaxy, by Douglas Adams. The descriptions of the characters are accompanied by information on details about appearances and references to the characters. Major characters— Arthur Dent, Ford Prefect, Zaphod Beeblebrox, Marvin the Paranoid Android, Trillian, and Slartibartfast—are separately described.",
+      "isPrivate": false,
+      "date": "2018-06-01T18:25:43",
+      "projectId": "0001"
     },
     {
-      "id": "donut",
-      "imagePath": "assets/img/foods/donut.png",
-      "name": "Donut",
-      "description": "Coberto com chantilly",
-      "price": 2.5,
-      "restaurantId": "bread-bakery"
+      "id": "0002",
+      "title": "Notícia 2",
+      "content": "The following is an alphabetical list of the minor characters in the various versions of The Hitchhiker's Guide to the Galaxy, by Douglas Adams. The descriptions of the characters are accompanied by information on details about appearances and references to the characters. Major characters— Arthur Dent, Ford Prefect, Zaphod Beeblebrox, Marvin the Paranoid Android, Trillian, and Slartibartfast—are separately described.",
+      "isPrivate": false,
+      "date": "2018-06-01T18:25:43",
+      "projectId": "0001"
     },
     {
-      "id": "bread",
-      "imagePath": "assets/img/foods/bread.png",
-      "name": "Pão Artesanal Italiano",
-      "description": "Pão artesanal com queijos italianos",
-      "price": 15.9,
-      "restaurantId": "bread-bakery"
+      "id": "0003",
+      "title": "Notícia 3",
+      "content": "The following is an alphabetical list of the minor characters in the various versions of The Hitchhiker's Guide to the Galaxy, by Douglas Adams. The descriptions of the characters are accompanied by information on details about appearances and references to the characters. Major characters— Arthur Dent, Ford Prefect, Zaphod Beeblebrox, Marvin the Paranoid Android, Trillian, and Slartibartfast—are separately described.",
+      "isPrivate": false,
+      "date": "2018-06-01T18:25:43",
+      "projectId": "0002"
     },
     {
-      "id": "burger",
-      "imagePath": "assets/img/foods/burger.png",
-      "name": "Classic Burger",
-      "description": "O clássico. Não tem como errar.",
-      "price": 18.5,
-      "restaurantId": "burger-house"
+      "id": "0004",
+      "title": "Notícia 4",
+      "content": "The following is an alphabetical list of the minor characters in the various versions of The Hitchhiker's Guide to the Galaxy, by Douglas Adams. The descriptions of the characters are accompanied by information on details about appearances and references to the characters. Major characters— Arthur Dent, Ford Prefect, Zaphod Beeblebrox, Marvin the Paranoid Android, Trillian, and Slartibartfast—are separately described.",
+      "isPrivate": false,
+      "date": "2018-06-01T18:25:43",
+      "projectId": "0002"
     },
     {
-      "id": "fries",
-      "imagePath": "assets/img/foods/fries.png",
-      "name": "Batatas Fritas",
-      "description": "Batatas fritas crocantes",
-      "price": 5.5,
-      "restaurantId": "burger-house"
+      "id": "0005",
+      "title": "Notícia 5",
+      "content": "The following is an alphabetical list of the minor characters in the various versions of The Hitchhiker's Guide to the Galaxy, by Douglas Adams. The descriptions of the characters are accompanied by information on details about appearances and references to the characters. Major characters— Arthur Dent, Ford Prefect, Zaphod Beeblebrox, Marvin the Paranoid Android, Trillian, and Slartibartfast—are separately described.",
+      "isPrivate": false,
+      "date": "2018-06-01T18:25:43",
+      "projectId": "0003"
     },
     {
-      "id": "coke.png",
-      "imagePath": "assets/img/foods/coke.png",
-      "name": "Refrigerante",
-      "description": "O refri mais gelado da cidade.",
-      "price": 4.5,
-      "restaurantId": "burger-house"
+      "id": "0006",
+      "title": "Notícia 6",
+      "content": "The following is an alphabetical list of the minor characters in the various versions of The Hitchhiker's Guide to the Galaxy, by Douglas Adams. The descriptions of the characters are accompanied by information on details about appearances and references to the characters. Major characters— Arthur Dent, Ford Prefect, Zaphod Beeblebrox, Marvin the Paranoid Android, Trillian, and Slartibartfast—are separately described.",
+      "isPrivate": false,
+      "date": "2018-06-01T18:25:43",
+      "projectId": "0003"
     },
     {
-      "id": "capp",
-      "imagePath": "assets/img/foods/capp.png",
-      "name": "Cappuccino com Chantilly",
-      "description": "Tradicional cappuccino com chantilly",
-      "price": 9.9,
-      "restaurantId": "coffee-corner"
+      "id": "0007",
+      "title": "Notícia 7",
+      "content": "The following is an alphabetical list of the minor characters in the various versions of The Hitchhiker's Guide to the Galaxy, by Douglas Adams. The descriptions of the characters are accompanied by information on details about appearances and references to the characters. Major characters— Arthur Dent, Ford Prefect, Zaphod Beeblebrox, Marvin the Paranoid Android, Trillian, and Slartibartfast—are separately described.",
+      "isPrivate": false,
+      "date": "2018-06-01T18:25:43",
+      "projectId": "0004"
     },
     {
-      "id": "espreso",
-      "imagePath": "assets/img/foods/espreso.png",
-      "name": "Super Espreso",
-      "description": "Café espresso duplo. ",
-      "price": 12.5,
-      "restaurantId": "coffee-corner"
-    },
-    {
-      "id": "starb",
-      "imagePath": "assets/img/foods/starb.png",
-      "name": "Starbucks Copycat",
-      "description": "O mais pedido da casa. O verdadeiro café americano pura água.",
-      "price": 15.6,
-      "restaurantId": "coffee-corner"
-    },
-    {
-      "id": "zlasagna",
-      "imagePath": "assets/img/foods/zlasagna.png",
-      "name": "Lasagna de Zucchini",
-      "description": "Lasagna deliciosa que se salva por causa do queijo",
-      "price": 14.9,
-      "restaurantId": "green-food"
-    },
-    {
-      "id": "greensandwich",
-      "imagePath": "assets/img/foods/greensandwich.png",
-      "name": "Sanduíche de Frango",
-      "description": "Frango grelhado e salada",
-      "price": 10.5,
-      "restaurantId": "green-food"
-    },
-    {
-      "id": "ceasar",
-      "imagePath": "assets/img/foods/ceasar.png",
-      "name": "Salada Ceasar",
-      "description": "Clássica salada ceasar.",
-      "price": 33.9,
-      "restaurantId": "green-food"
-    },
-    {
-      "id": "sunday",
-      "imagePath": "assets/img/foods/sunday.png",
-      "name": "Mega Sunday",
-      "description": "Sunday com várias bolas de sorvete a sua escolha",
-      "price": 21.5,
-      "restaurantId": "ice-cream"
-    },
-    {
-      "id": "chocpop",
-      "imagePath": "assets/img/foods/chocpop.png",
-      "name": "Picolé de Brigadeiro",
-      "description": "Picolé de brigadeiro recheado com côco.",
-      "price": 8.5,
-      "restaurantId": "ice-cream"
-    },
-    {
-      "id": "icestd.png",
-      "imagePath": "assets/img/foods/icestd.png",
-      "name": "Sorvete Simples",
-      "description": "Clássico sorvete de rua onde todos os sabores são idênticos.",
-      "price": 1.5,
-      "restaurantId": "ice-cream"
-    },
-    {
-      "id": "cup",
-      "imagePath": "assets/img/foods/cup.png",
-      "name": "Cup Cake de Choc. Branco",
-      "description": "Cup Cake de chocolate branco",
-      "price": 5.5,
-      "restaurantId": "tasty-treats"
-    },
-    {
-      "id": "straw",
-      "imagePath": "assets/img/foods/straw.png",
-      "name": "Bolo de Morango",
-      "description": "Bolo recheado e coberto com morangos",
-      "price": 40.5,
-      "restaurantId": "tasty-treats"
-    },
-    {
-      "id": "cake",
-      "imagePath": "assets/img/foods/cake.png",
-      "name": "Fatia de Bolo",
-      "description": "Fatia de bolo de morango",
-      "price": 5.9,
-      "restaurantId": "tasty-treats"
+      "id": "0008",
+      "title": "Notícia 8",
+      "content": "The following is an alphabetical list of the minor characters in the various versions of The Hitchhiker's Guide to the Galaxy, by Douglas Adams. The descriptions of the characters are accompanied by information on details about appearances and references to the characters. Major characters— Arthur Dent, Ford Prefect, Zaphod Beeblebrox, Marvin the Paranoid Android, Trillian, and Slartibartfast—are separately described.",
+      "isPrivate": false,
+      "date": "2018-06-01T18:25:43",
+      "projectId": "0004"
     }
   ],
-  "reviews": [
+  "partners": [
     {
-      "name": "Julia",
-      "date": "2017-01-23T18:25:43",
-      "rating": 4.5,
-      "comments": "Tudo muito bom, entrega no tempo certo",
-      "restaurantId": "bread-bakery"
+      "name": "Agrajag",
+      "email": "agrajag@gmail.com",
+      "dateRegister": "2017-01-23T18:25:43",
+      "gender": "M",
+      "skill": "Desenvolverdor FrontEnd",
+      "projectId": "0001"
     },
     {
-      "name": "Aline",
-      "date": "2016-12-12T18:25:43",
-      "rating": 3,
-      "comments": "NÃO recomendo. O recheio é só um creme, não tem camarão e nem carne",
-      "restaurantId": "bread-bakery"
+      "name": "Mrs Alice Beeblebrox",
+      "email": "alicebeeblebrox@gmail.com",
+      "dateRegister": "2017-01-23T18:25:43",
+      "gender": "F",
+      "skill": "Desenvolvedora BackEnd",
+      "projectId": "0001"
     },
     {
-      "name": "Renata",
-      "date": "2016-12-12T18:25:43",
-      "rating": 2,
-      "comments": "Não foi muito agradável ao nosso paladar, e eu e meu esposo no outro dia passamos super mal. Pode até ter sido outra coisa, mas...",
-      "restaurantId": "bread-bakery"
+      "name": "Allitnils",
+      "email": "allitnils@gmail.com",
+      "dateRegister": "2017-01-23T18:25:43",
+      "gender": "M",
+      "skill": "Web Designer",
+      "projectId": "0002"
     },
     {
-      "name": "Renata",
-      "date": "2016-12-12T18:25:43",
-      "rating": 5,
-      "comments": "Nunca deixou na mão, comida sempre deliciosa.",
-      "restaurantId": "bread-bakery"
+      "name": "Almighty Bob",
+      "email": "almightybob@gmail.com",
+      "dateRegister": "2017-01-23T18:25:43",
+      "gender": "M",
+      "skill": "Gerente",
+      "projectId": "0002"
     },
     {
-      "name": "Daniela",
-      "date": "2017-01-23T18:25:43",
-      "rating": 4,
-      "comments": "Sanduíche muito bom! Já pedi diversas vezes sempre bom!",
-      "restaurantId": "burger-house"
+      "name": "Anjie",
+      "email": "anjie@gmail.com",
+      "dateRegister": "2017-01-23T18:25:43",
+      "gender": "F",
+      "skill": "Desenvolvedora FrontEnd",
+      "projectId": "0003"
     },
     {
-      "name": "Laila",
-      "date": "2017-02-02T18:25:43",
-      "rating": 5,
-      "comments": "Melhor hambúrguer que já provei. Vai ser difícil voltar para mc e bk",
-      "restaurantId": "burger-house"
+      "name": "Arcturan Megafreighter crew",
+      "email": "arcturanmegafreightercrew@gmail.com",
+      "dateRegister": "2017-01-23T18:25:43",
+      "gender": "M",
+      "skill": "Desenvolvedor BackEnd",
+      "projectId": "0003"
     },
     {
-      "name": "Suzana",
-      "date": "2016-12-12T18:25:43",
-      "rating": 3.5,
-      "comments": "Meu sanduíche chegou frio e todo desmontado =\\",
-      "restaurantId": "burger-house"
+      "name": "Aseed",
+      "email": "aseed@gmail.com",
+      "dateRegister": "2017-01-23T18:25:43",
+      "gender": "M",
+      "skill": "Desenvolvedor FrontEnd",
+      "projectId": "0004"
     },
     {
-      "name": "Eric",
-      "date": "2017-01-23T18:25:43",
-      "rating": 4.5,
-      "comments": "Excelente opção! Recomendo!",
-      "restaurantId": "coffee-corner"
-    },
-    {
-      "name": "Amanda",
-      "date": "2017-02-02T18:25:43",
-      "rating": 2.5,
-      "comments": "Demorou muito e o café veio gelado",
-      "restaurantId": "coffee-corner"
-    },
-    {
-      "name": "Carla",
-      "date": "2016-12-12T18:25:43",
-      "rating": 4.8,
-      "comments": "Tudo perfeito. Entrega, embalagem, comida. Resultado? Melhor custo beneficio",
-      "restaurantId": "coffee-corner"
-    },
-    {
-      "name": "Rodrigo",
-      "date": "2016-12-12T18:25:43",
-      "rating": 4,
-      "comments": "Muito rápida a entrega, mas é caro.",
-      "restaurantId": "coffee-corner"
-    },
-    {
-      "name": "André",
-      "date": "2016-12-12T18:25:43",
-      "rating": 4.5,
-      "comments": "Excelente como sempre!",
-      "restaurantId": "coffee-corner"
-    },
-    {
-      "name": "João",
-      "date": "2017-01-23T18:25:43",
-      "rating": 5,
-      "comments": "Excelente. Fiz o pedido com outro endereço e quando vi o erro liguei avisando. O motoqueiro cortou a cidade todinha e a comida ainda chegou quentinha (e deliciosa). Estou sempre pedindo e recomendando",
-      "restaurantId": "green-food"
-    },
-    {
-      "name": "Marcelo",
-      "date": "2017-02-02T18:25:43",
-      "rating": 4.5,
-      "comments": "Chegou muito rápido, antes mesmo da previsão",
-      "restaurantId": "green-food"
-    },
-    {
-      "name": "Fatinha",
-      "date": "2017-01-23T18:25:43",
-      "rating": 2,
-      "comments": "Ñ gostei dos sabores q pedi e achei o preço muito elevado",
-      "restaurantId": "ice-cream"
-    },
-    {
-      "name": "Lucas",
-      "date": "2017-02-02T18:25:43",
-      "rating": 2.5,
-      "comments": "Esperar 1:45hr pra receber o pedido é INACEITÁVEL",
-      "restaurantId": "ice-cream"
-    },
-    {
-      "name": "Jacira",
-      "date": "2017-02-01T18:25:43",
-      "rating": 4.5,
-      "comments": "Veio OK!",
-      "restaurantId": "ice-cream"
-    },
-    {
-      "name": "Ana",
-      "date": "2017-01-23T18:25:43",
-      "rating": 5,
-      "comments": "Rápido e sempre uma delicia!! Ja pedi 3x e sempre veio rapido e tudo certinho.",
-      "restaurantId": "tasty-treats"
-    },
-    {
-      "name": "Larissa",
-      "date": "2017-02-02T18:25:43",
-      "rating": 2.5,
-      "comments": "A taxa de entrega poderia ser mais barata.",
-      "restaurantId": "tasty-treats"
-    },
-    {
-      "name": "Jarbas",
-      "date": "2016-12-15T18:25:43",
-      "rating": 4.7,
-      "comments": "Excelente e chegou muito rápido!",
-      "restaurantId": "tasty-treats"
-    },
-    {
-      "name": "Rafaela",
-      "date": "2017-01-12T18:25:43",
-      "rating": 5,
-      "comments": "Chegou rápido e perfeito!",
-      "restaurantId": "tasty-treats"
-    },
-    {
-      "name": "Julia",
-      "date": "2016-12-12T18:25:43",
-      "rating": 1.5,
-      "comments": "Sempre gostei muito dos pedidos que eu fiz, mas dessa vez foi péssimo e decepcionou muito. Demorou 30min a mais pra chegar do que o tempo máximo esperado.",
-      "restaurantId": "tasty-treats"
-    },
-    {
-      "name": "Marília",
-      "date": "2016-12-20T18:25:43",
-      "rating": 4.5,
-      "comments": "Taxa de entrega bastante elevada e precisa colocar no app se a pessoa quer porção adicional de algo (calda, crocante etc)",
-      "restaurantId": "tasty-treats"
+      "name": "Barmen",
+      "email": "barmen@gmail.com",
+      "dateRegister": "2017-01-23T18:25:43",
+      "gender": "M",
+      "skill": "Desenvolvedor BackEnd",
+      "projectId": "0004"
     }
   ],
   "orders": []

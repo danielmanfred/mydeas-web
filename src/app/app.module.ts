@@ -11,7 +11,11 @@ import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { ProjectComponent } from './projects/project/project.component'
+import { ProjectComponent } from './projects/project/project.component';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { NewsComponent } from './project-detail/news/news.component';
+import { NewsItemComponent } from './project-detail/news-item/news-item.component';
+import { PartnersComponent } from './project-detail/partners/partners.component'
 
 
 @NgModule({
@@ -21,7 +25,11 @@ import { ProjectComponent } from './projects/project/project.component'
     HeaderComponent,
     HomeComponent,
     ProjectsComponent,
-    ProjectComponent
+    ProjectComponent,
+    ProjectDetailComponent,
+    NewsComponent,
+    NewsItemComponent,
+    PartnersComponent
   ],
   imports: [
     BrowserModule,

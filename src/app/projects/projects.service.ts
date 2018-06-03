@@ -16,4 +16,16 @@ export class ProjectService {
                         .map(response => response.json())
                         .catch(ErrorHandler.handleError)
     }
+
+    getProjectById(id: string): Observable<Project> {
+        return this.http.get(`${MYDEAS_API}/projects/${id}`)
+                        .map(response => response.json())
+                        .catch(ErrorHandler.handleError)
+    }
+
+    getPartners(id: string): Observable<Project> {
+        return this.http.get(`${MYDEAS_API}/projects/${id}/partners`)
+                        .map(response => response.json())
+                        .catch(ErrorHandler.handleError)
+    }
 }
