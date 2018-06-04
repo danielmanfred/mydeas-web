@@ -1,4 +1,8 @@
+import { NewsItem } from './../news-item/news-item.model';
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { ProjectService } from '../../projects/projects.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'mt-news',
@@ -7,9 +11,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsComponent implements OnInit {
 
-  constructor() { }
+  news: Observable<NewsItem[]>
+
+  constructor(private projectService: ProjectService, private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.news = this.projectService.newsOfProject(this.route.parent.snapshot.params['id'])
+  }
+
+  addLikeNews(item: NewsItem) {
+    item.likes++
   }
 
 }

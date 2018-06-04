@@ -1,3 +1,4 @@
+import { NewsItem } from './../project-detail/news-item/news-item.model';
 import { ErrorHandler } from './../app.error.handler';
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http'
@@ -25,6 +26,12 @@ export class ProjectService {
 
     getPartners(id: string): Observable<Project> {
         return this.http.get(`${MYDEAS_API}/projects/${id}/partners`)
+                        .map(response => response.json())
+                        .catch(ErrorHandler.handleError)
+    }
+
+    newsOfProject(id: string): Observable<NewsItem[]> {
+        return this.http.get(`${MYDEAS_API}/projects/${id}/news`)
                         .map(response => response.json())
                         .catch(ErrorHandler.handleError)
     }

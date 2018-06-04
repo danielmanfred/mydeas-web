@@ -1,40 +1,8 @@
-<div class="col-md-9 col-xs-12">
+<div class="col-md-12 col-xs-12">
+  <mt-news-item *ngFor="let item of news | async" [newsItem]="item" (addLike)="addLikeNews($event)">
 
-  <div class="menu-item-info-box">
-      <div class="menu-item-info-box-content">
-        <span class="menu-item-info-box-text">Notícia 001</span>
-        <span class="menu-item-info-box-detail">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem explicabo itaque incidunt sunt architecto debitis nihil, reiciendis at commodi veniam eligendi impedit eius minima sapiente expedita necessitatibus autem? Repudiandae, dolorum.</span>
-        <span class="menu-item-info-box-price">Arthur Dent</span>
-        <a class=""><i class="fa fa-plus-circle"></i> Gostar</a>
-      </div>
-      <!-- /.info-box-content -->
-    </div>
-  <!-- /.info-box -->
-
-  <div class="menu-item-info-box">
-      <div class="menu-item-info-box-content">
-        <span class="menu-item-info-box-text">Notícia 002</span>
-        <span class="menu-item-info-box-detail">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem explicabo itaque incidunt sunt architecto debitis nihil, reiciendis at commodi veniam eligendi impedit eius minima sapiente expedita necessitatibus autem? Repudiandae, dolorum.</span>
-        <span class="menu-item-info-box-price">Ford Prefect</span>
-        <a class=""><i class="fa fa-plus-circle"></i> Gostar</a>
-      </div>
-      <!-- /.info-box-content -->
-    </div>
-  <!-- /.info-box -->
-
-  <div class="menu-item-info-box">
-
-      <div class="menu-item-info-box-content">
-        <span class="menu-item-info-box-text">Notícia 003</span>
-        <span class="menu-item-info-box-detail">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem explicabo itaque incidunt sunt architecto debitis nihil, reiciendis at commodi veniam eligendi impedit eius minima sapiente expedita necessitatibus autem? Repudiandae, dolorum.</span>
-        <span class="menu-item-info-box-price">Trillian</span>
-        <a class=""><i class="fa fa-plus-circle"></i> Gostar</a>
-      </div>
-      <!-- /.info-box-content -->
-    </div>
-  <!-- /.info-box -->
-
+  </mt-news-item>
 </div>
-<div class="col-md-3 col-xs-12">
+<div class="col-md-0 col-xs-12">
 
 </div>
