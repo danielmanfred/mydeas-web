@@ -1,8 +1,10 @@
+import { environment } from './../environments/environment';
 import { ProjectService } from './projects/projects.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { registerLocaleData } from '@angular/common';
 
 import { ROUTES } from './app.routes';
 
@@ -15,8 +17,7 @@ import { ProjectComponent } from './projects/project/project.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { NewsComponent } from './project-detail/news/news.component';
 import { NewsItemComponent } from './project-detail/news-item/news-item.component';
-import { PartnersComponent } from './project-detail/partners/partners.component'
-
+import { PartnersComponent } from './project-detail/partners/partners.component';
 
 @NgModule({
   declarations: [
