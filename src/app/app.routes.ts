@@ -1,3 +1,4 @@
+import { OrderComponent } from './order/order.component';
 import { PartnersComponent } from './project-detail/partners/partners.component';
 import { NewsComponent } from './project-detail/news/news.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
@@ -35,6 +36,10 @@ export const ROUTES: Routes = [
             {
                 path: 'partners',
                 component: PartnersComponent
+            },
+            {
+                path: 'order',
+                component: OrderComponent
             }
         ]
     }

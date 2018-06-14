@@ -111,7 +111,7 @@
     },
     "mydeas-e2e": {
       "root": "",
-      "sourceRoot": "e2e",
+      "sourceRoot": "src",
       "projectType": "application",
       "architect": {
         "e2e": {

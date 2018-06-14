@@ -18,6 +18,7 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
 import { NewsComponent } from './project-detail/news/news.component';
 import { NewsItemComponent } from './project-detail/news-item/news-item.component';
 import { PartnersComponent } from './project-detail/partners/partners.component';
+import { OrderComponent } from './order/order.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PartnersComponent } from './project-detail/partners/partners.component'
     ProjectDetailComponent,
     NewsComponent,
     NewsItemComponent,
-    PartnersComponent
+    PartnersComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
