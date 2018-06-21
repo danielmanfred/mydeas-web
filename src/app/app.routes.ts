@@ -1,11 +1,12 @@
+import { ApplyComponent } from './project-detail/apply/apply.component';
 import { OrderComponent } from './order/order.component';
 import { PartnersComponent } from './project-detail/partners/partners.component';
 import { NewsComponent } from './project-detail/news/news.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
-import { Routes } from '@angular/router'
-import { HomeComponent } from './home/home.component'
+import { Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 
 export const ROUTES: Routes = [
     {
@@ -38,9 +39,13 @@ export const ROUTES: Routes = [
                 component: PartnersComponent
             },
             {
-                path: 'order',
-                component: OrderComponent
+                path: 'apply',
+                component: ApplyComponent
             }
         ]
+    },
+    {
+        path: 'order',
+        component: OrderComponent
     }
 ]

@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { registerLocaleData } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { ROUTES } from './app.routes';
 
@@ -19,11 +20,14 @@ import { NewsComponent } from './project-detail/news/news.component';
 import { NewsItemComponent } from './project-detail/news-item/news-item.component';
 import { PartnersComponent } from './project-detail/partners/partners.component';
 import { OrderComponent } from './order/order.component';
+import { ApplyComponent } from './project-detail/apply/apply.component';
+import { InputComponent } from './shared/input/input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
+    ApplyComponent,
     HeaderComponent,
     HomeComponent,
     ProjectsComponent,
@@ -32,11 +36,13 @@ import { OrderComponent } from './order/order.component';
     NewsComponent,
     NewsItemComponent,
     PartnersComponent,
-    OrderComponent
+    OrderComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
+    FormsModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [ProjectService],
