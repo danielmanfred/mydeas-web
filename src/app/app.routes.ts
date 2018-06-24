@@ -1,5 +1,4 @@
 import { ApplyComponent } from './project-detail/apply/apply.component';
-import { OrderComponent } from './order/order.component';
 import { PartnersComponent } from './project-detail/partners/partners.component';
 import { NewsComponent } from './project-detail/news/news.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
@@ -43,9 +42,5 @@ export const ROUTES: Routes = [
                 component: ApplyComponent
             }
         ]
-    },
-    {
-        path: 'order',
-        component: OrderComponent
     }
 ]

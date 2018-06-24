@@ -1,5 +1,4 @@
 import { environment } from './../environments/environment';
-import { ProjectService } from './projects/projects.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
@@ -19,9 +18,12 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
 import { NewsComponent } from './project-detail/news/news.component';
 import { NewsItemComponent } from './project-detail/news-item/news-item.component';
 import { PartnersComponent } from './project-detail/partners/partners.component';
-import { OrderComponent } from './order/order.component';
 import { ApplyComponent } from './project-detail/apply/apply.component';
 import { InputComponent } from './shared/input/input.component';
+import { RadioComponent } from './shared/radio/radio.component';
+
+import { ProjectService } from './projects/projects.service';
+import { ApplyService } from './project-detail/apply/apply.service';
 
 @NgModule({
   declarations: [
@@ -36,8 +38,8 @@ import { InputComponent } from './shared/input/input.component';
     NewsComponent,
     NewsItemComponent,
     PartnersComponent,
-    OrderComponent,
-    InputComponent
+    InputComponent,
+    RadioComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,7 @@ import { InputComponent } from './shared/input/input.component';
     FormsModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [ProjectService],
+  providers: [ProjectService, ApplyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

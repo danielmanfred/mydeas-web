@@ -25,4 +25,12 @@ export class InputComponent implements OnInit, AfterContentInit {
       throw new Error('This component needs to be used with ngModel')
     }
   }
+
+  hasSuccess(): boolean {
+    return this.input.valid && (this.input.dirty || this.input.touched)
+  }
+
+  hasError(): boolean {
+    return this.input.invalid && (this.input.dirty || this.input.touched)
+  }
 }
