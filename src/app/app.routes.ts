@@ -1,3 +1,4 @@
+import { ApplySummaryComponent } from './project-detail/apply-summary/apply-summary.component';
 import { ApplyComponent } from './project-detail/apply/apply.component';
 import { PartnersComponent } from './project-detail/partners/partners.component';
 import { NewsComponent } from './project-detail/news/news.component';
@@ -40,6 +41,10 @@ export const ROUTES: Routes = [
             {
                 path: 'apply',
                 component: ApplyComponent
+            },
+            {
+                path: 'apply-summary',
+                component: ApplySummaryComponent
             }
         ]
     }
