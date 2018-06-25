@@ -6,6 +6,6 @@ export interface Project {
     logo: string
     isActive: boolean
     tags: string[]
-    category: string
-    owner: string
+    category: {_id: string, name: string}
+    owner: {_id: string, name: string}
 }
