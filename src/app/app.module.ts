@@ -24,6 +24,7 @@ import { RadioComponent } from './shared/radio/radio.component';
 
 import { ProjectService } from './projects/projects.service';
 import { ApplyService } from './project-detail/apply/apply.service';
+import { ApplySummaryComponent } from './project-detail/apply-summary/apply-summary.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ApplyService } from './project-detail/apply/apply.service';
     NewsItemComponent,
     PartnersComponent,
     InputComponent,
-    RadioComponent
+    RadioComponent,
+    ApplySummaryComponent
   ],
   imports: [
     BrowserModule,

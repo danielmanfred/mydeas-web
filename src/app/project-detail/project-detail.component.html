@@ -24,11 +24,13 @@
 
             <dl class="col-sm-9 col-xs-12">
               <dt>Categoria</dt>
-              <dd>{{project?.category}}</dd>
+              <dd>{{project?.category?.name}}</dd>
               <dt>Quem somos</dt>
               <dd>{{project?.description}}</dd>
               <dt>Fundador</dt>
-              <dd>{{project?.owner}}</dd>
+              <dd>{{project?.owner?.name}}</dd>
+              <dt>Tags</dt>
+              <dd>{{project?.tags?.join(', ')}}</dd>
             </dl>
           </div>
           <!-- /.box-body -->

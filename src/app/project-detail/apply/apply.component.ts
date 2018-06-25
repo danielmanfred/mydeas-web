@@ -2,6 +2,7 @@ import { ApplyService } from './apply.service';
 import { RadioOption } from './../../shared/radio/radio-option.model';
 import { Component, OnInit } from '@angular/core';
 import { Apply } from './apply.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'mt-apply',
@@ -30,14 +31,14 @@ export class ApplyComponent implements OnInit {
     }
   ]
 
-  constructor(private applyService: ApplyService) { }
+  constructor(private applyService: ApplyService, private router: Router) { }
 
   ngOnInit() {
   }
 
   checkApply(apply: Apply) {
     this.applyService.checkApply(apply).subscribe((applyId: string) => {
-      console.log(`Solicitação concluída: ${applyId}`)
+      this.router.navigate(['/order-summary'])
     })
     console.log(apply)
   }

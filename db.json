@@ -7,7 +7,11 @@
       "date": "2018-06-01T18:25:43",
       "logo": "assets/img/projects/wework.png",
       "isActive": true,
-      "tags": ["coworking", "criatividade", "produtividade"],
+      "tags": [
+        "coworking",
+        "criatividade",
+        "produtividade"
+      ],
       "category": "Coworking",
       "owner": "Arthur Dent"
     },
@@ -18,7 +22,11 @@
       "date": "2018-06-01T18:25:43",
       "logo": "assets/img/projects/slack.png",
       "isActive": true,
-      "tags": ["comunicação", "empresas", "negócios"],
+      "tags": [
+        "comunicação",
+        "empresas",
+        "negócios"
+      ],
       "category": "Comunicação",
       "owner": "Ford Prefect"
     },
@@ -29,7 +37,11 @@
       "date": "2018-06-01T18:25:43",
       "logo": "assets/img/projects/nio.png",
       "isActive": true,
-      "tags": ["veículos", "elétricos", "inteligentes"],
+      "tags": [
+        "veículos",
+        "elétricos",
+        "inteligentes"
+      ],
       "category": "Automóveis",
       "owner": "Zaphod Beeblebrox"
     },
@@ -40,7 +52,11 @@
       "date": "2018-06-01T18:25:43",
       "logo": "assets/img/projects/rubrick.png",
       "isActive": true,
-      "tags": ["dados", "recuperação", "análise"],
+      "tags": [
+        "dados",
+        "recuperação",
+        "análise"
+      ],
       "category": "Computação em núvem",
       "owner": "Tricia McMillan"
     }
@@ -185,5 +201,30 @@
       "projectId": "0004"
     }
   ],
-  "apply": []
+  "apply": [
+    {
+      "answer": "Frontend",
+      "answer2": "Angular",
+      "academicOption": "IT",
+      "id": 1
+    },
+    {
+      "answer": "Backend",
+      "answer2": "Node.js",
+      "academicOption": "IT",
+      "id": 2
+    },
+    {
+      "answer": "Mobile",
+      "answer2": "Ionic",
+      "academicOption": "IT",
+      "id": 3
+    },
+    {
+      "answer": "Gerência de empresas",
+      "answer2": "Gerir",
+      "academicOption": "AD",
+      "id": 4
+    }
+  ]
 }
