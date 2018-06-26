@@ -225,6 +225,54 @@
       "answer2": "Gerir",
       "academicOption": "AD",
       "id": 4
+    },
+    {
+      "answer": "Web Designer",
+      "answer2": "PhotoShop",
+      "academicOption": "DE",
+      "id": 5
+    },
+    {
+      "answer": "UX Designer",
+      "answer2": "Prototipação",
+      "academicOption": "DE",
+      "id": 6
+    },
+    {
+      "answer": "Investidor",
+      "answer2": "SEO ..",
+      "academicOption": "NO",
+      "id": 7
+    },
+    {
+      "answer": "Frontend",
+      "answer2": "React",
+      "academicOption": "IT",
+      "id": 8
+    },
+    {
+      "answer": "Backend",
+      "answer2": "Python",
+      "academicOption": "IT",
+      "id": 9
+    },
+    {
+      "answer": "Desenvolvedor Mobile",
+      "answer2": "Flutter",
+      "academicOption": "IT",
+      "id": 10
+    },
+    {
+      "answer": "Frontend developer",
+      "answer2": "Vuejs",
+      "academicOption": "IT",
+      "id": 11
+    },
+    {
+      "answer": "Backend",
+      "answer2": "PHP Laravel",
+      "academicOption": "IT",
+      "id": 12
     }
   ]
 }

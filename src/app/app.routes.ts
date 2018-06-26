@@ -1,3 +1,4 @@
+import { LoginComponent } from './security/login/login.component';
 import { ApplySummaryComponent } from './project-detail/apply-summary/apply-summary.component';
 import { ApplyComponent } from './project-detail/apply/apply.component';
 import { PartnersComponent } from './project-detail/partners/partners.component';
@@ -47,5 +48,9 @@ export const ROUTES: Routes = [
                 component: ApplySummaryComponent
             }
         ]
+    },
+    {
+        path: 'login',
+        component: LoginComponent
     }
 ]
