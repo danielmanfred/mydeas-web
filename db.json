@@ -273,6 +273,18 @@
       "answer2": "PHP Laravel",
       "academicOption": "IT",
       "id": 12
+    },
+    {
+      "answer": "Frontend",
+      "answer2": "JQuery",
+      "academicOption": "IT",
+      "id": 13
+    },
+    {
+      "answer": "Backend",
+      "answer2": "Node.js",
+      "academicOption": "IT",
+      "id": 14
     }
   ]
 }
