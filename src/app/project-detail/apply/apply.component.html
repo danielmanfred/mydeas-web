@@ -3,7 +3,7 @@
 
 <section class="content">
   <section class="invoice">
-        <form #form="ngForm" novalidate>
+        <form [formGroup]="applyForm" novalidate>
           <div class="row">
             <div class="col-xs-12">
               <h2 class="page-header">
@@ -12,26 +12,49 @@
             </div>
           </div>                
 
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="lead">Seus dados</p>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <mt-input-container errorMessage="Campo obrigatório com 5 caracteres" label="Nome">
+                <input class="form-control" formControlName="name" placeholder="Seu Nome">
+              </mt-input-container>
+            </div>
+
+            <div class="col-sm-6 col-xs-12">
+              <mt-input-container errorMessage="Email inválido" label="Email">
+                <input type="text" class="form-control" formControlName="email" placeholder="Seu Email">
+              </mt-input-container>
+            </div>
+
+            <div class="col-sm-6 col-xs-12">
+              <mt-input-container errorMessage="Email inválido" label="Email">
+                <input type="text" class="form-control" formControlName="emailConfirmation" placeholder="Confirme Seu Email">
+              </mt-input-container>
+            </div>
+          </div>
+
           <div class="row invoice-info">
             <div class="col-xs-12">
               <p class="lead">Como você pretende atuar neste projeto?</p>
             </div>
             <div class="col-sm-9 col-xs-12">
               <mt-input-container errorMessage="Campo obrigatório com no mínimo 5 caracteres" label="Resposta">
-                <input class="form-control" name="answer" ngModel required minlength="5" 
+                <input class="form-control" formControlName="answer1" 
                   placeholder="Resposta" autocomplete="off"> 
               </mt-input-container>
             </div>
             <!-- /.col -->
           </div>
 
-          <div class="row invoice-info">
+          <div class="row">
             <div class="col-xs-12">
               <p class="lead">Qual é a sua maior expertise?</p>
             </div>
             <div class="col-sm-9 col-xs-12">
               <mt-input-container errorMessage="Campo obrigatório com no mínimo 5 caracteres" label="Resposta2">
-                <input type="text" class="form-control" name="answer2" required minlength="5" 
+                <input type="text" class="form-control" formControlName="answer2"
                   ngModel placeholder="Resposta" autocomplete="off">
               </mt-input-container>
             </div>
@@ -42,7 +65,7 @@
             <div class="col-sm-6 col-xs-12">
               <p class="lead">Em qual área você possui formação?</p>
               <div class="form-group">
-                <mt-radio [options]="academicOptions" name="academicOption" ngModel></mt-radio>
+                <mt-radio [options]="academicOptions" formControlName="academic" ngModel></mt-radio>
               </div>
             </div>
           </div>
@@ -50,7 +73,8 @@
 
         <div class="row">
           <div class="col-xs-12">
-            <button (click)="checkApply(form.value)" class="btn btn-success pull-right" [disabled]="!form.valid"><i class="fa fa-send"></i>
+            <button (click)="checkApply(applyForm.value)" class="btn btn-success pull-right" 
+              [disabled]="!applyForm.valid"><i class="fa fa-send"></i>
                Concluir Solicitação
             </button>
           </div>
