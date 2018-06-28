@@ -35,13 +35,18 @@ export class ApplyComponent implements OnInit {
   ]
 
   constructor(private applyService: ApplyService, 
-              private router: Router) { }
-              /* private formBuilder: FormBuilder */
+              private router: Router,
+              private formBuilder: FormBuilder) { }
 
   ngOnInit() {
-    //this.applyForm = this.formBuilder.group({
-      //name: ''
-    //})
+    this.applyForm = this.formBuilder.group({
+      name: this.formBuilder.control(''),
+      email: this.formBuilder.control(''),
+      emailConfirmation: this.formBuilder.control(''),
+      answer1: this.formBuilder.control(''),
+      answer2: this.formBuilder.control(''),
+      academic: this.formBuilder.control('')
+    })
   }
 
   checkApply(apply: Apply) {
