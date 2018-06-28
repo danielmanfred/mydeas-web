@@ -21,11 +21,13 @@ import { PartnersComponent } from './project-detail/partners/partners.component'
 import { ApplyComponent } from './project-detail/apply/apply.component';
 import { InputComponent } from './shared/input/input.component';
 import { RadioComponent } from './shared/radio/radio.component';
+import { ApplySummaryComponent } from './project-detail/apply-summary/apply-summary.component';
+import { LoginComponent } from './security/login/login.component';
+
 
 import { ProjectService } from './projects/projects.service';
 import { ApplyService } from './project-detail/apply/apply.service';
-import { ApplySummaryComponent } from './project-detail/apply-summary/apply-summary.component';
-import { LoginComponent } from './security/login/login.component';
+import { LoginService } from './security/login/login.service';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,7 @@ import { LoginComponent } from './security/login/login.component';
     ReactiveFormsModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [ProjectService, ApplyService],
+  providers: [ProjectService, ApplyService, LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

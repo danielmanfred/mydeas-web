@@ -1,6 +1,7 @@
+import { User } from './user.model';
 import { LoginService } from './login.service';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms'
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'mt-login',
@@ -22,6 +23,7 @@ export class LoginComponent implements OnInit {
 
   login() {
     this.loginService.login(this.loginForm.value.email, this.loginForm.value.password)
+                     .subscribe(user => console.log(user))
   }
 
 }

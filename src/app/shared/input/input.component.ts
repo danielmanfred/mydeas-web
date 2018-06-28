@@ -23,9 +23,9 @@ export class InputComponent implements OnInit, AfterContentInit {
   }
 
   ngAfterContentInit() {
-    this.input = this.model
+    this.input = this.model || this.control
     if (this.input === undefined) {
-      throw new Error('This component needs to be used with ngModel')
+      throw new Error('This component needs to be used with ngModel or FormControlName')
     }
   }
 

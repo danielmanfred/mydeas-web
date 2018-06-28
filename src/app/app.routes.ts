@@ -19,6 +19,10 @@ export const ROUTES: Routes = [
         component: AboutComponent
     },
     {
+        path: 'login',
+        component: LoginComponent
+    },
+    {
         path: 'projects',
         component: ProjectsComponent
     },
@@ -48,9 +52,5 @@ export const ROUTES: Routes = [
                 component: ApplySummaryComponent
             }
         ]
-    },
-    {
-        path: 'login',
-        component: LoginComponent
     }
 ]
