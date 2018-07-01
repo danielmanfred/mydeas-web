@@ -11,6 +11,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class LoginComponent implements OnInit {
 
   loginForm: FormGroup
+  private user: User = new User()
 
   constructor(private fb: FormBuilder, private loginService: LoginService) { }
 
@@ -22,6 +23,8 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
+    console.log(this.user)
+    //this.loginService.login(this.user)
     this.loginService.login(this.loginForm.value.email, this.loginForm.value.password)
                      .subscribe(user => console.log(user))
   }
