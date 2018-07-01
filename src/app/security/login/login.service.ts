@@ -11,13 +11,11 @@ export class LoginService {
     private isAuth: boolean = false
 
     constructor(private http: HttpClient, private router: Router) {}
-    //constructor(private router: Router) {}
-
+    
     login(email: string, password: string): Observable<User> {
         let headers: any = new HttpHeaders()
         headers.append('Content-Type', 'application/json')
         return this.http.post<User>(`${MYDEAS_API}/users/authenticate`, { email: email, password: password })
-        }});
     }
     
     /*login(user: User) {

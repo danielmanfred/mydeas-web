@@ -46,11 +46,11 @@ export const ROUTES: Routes = [
             {
                 path: 'apply',
                 component: ApplyComponent
-            },
-            {
-                path: 'apply-summary',
-                component: ApplySummaryComponent
             }
         ]
+    },
+    {
+        path: 'apply-summary',
+        component: ApplySummaryComponent
     }
 ]

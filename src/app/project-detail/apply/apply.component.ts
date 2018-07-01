@@ -52,7 +52,6 @@ export class ApplyComponent implements OnInit {
   checkApply(apply: Apply) {
     this.applyService.checkApply(apply).subscribe((applyId: string) => {
       this.router.navigate(['/apply-summary'])
-      console.log('Testing 2140')
     })
     console.log(apply)
   }
