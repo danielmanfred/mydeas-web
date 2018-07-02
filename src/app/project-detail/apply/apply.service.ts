@@ -11,7 +11,7 @@ export class ApplyService {
     constructor(private http: Http) {}
 
     checkApply(apply: Apply): Observable<string> {
-        const headers = new Headers()    
+        const headers = new Headers()
         headers.append('Content-Type', 'application/json')
         return this.http.post(`${MYDEAS_API}/apply`, JSON.stringify(apply),
          new RequestOptions({headers: headers})).map(response => response.json()).map(apply => apply.id)
