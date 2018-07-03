@@ -4,8 +4,6 @@ import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
 import { MYDEAS_API } from '../app.api';
 import { Project } from '../projects/project/project.model';
-import { ProjectService } from '../projects/projects.service';
-import { ActivatedRoute } from '@angular/router';
 
 @Injectable()
 export class ProjectCreatorService {

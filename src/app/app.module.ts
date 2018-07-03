@@ -1,16 +1,13 @@
-import { environment } from './../environments/environment';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
-import { registerLocaleData } from '@angular/common';
+import { RouterModule, PreloadAllModules } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { ROUTES } from './app.routes';
 
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -20,22 +17,17 @@ import { NewsComponent } from './project-detail/news/news.component';
 import { NewsItemComponent } from './project-detail/news-item/news-item.component';
 import { PartnersComponent } from './project-detail/partners/partners.component';
 import { ApplyComponent } from './project-detail/apply/apply.component';
-import { InputComponent } from './shared/input/input.component';
-import { RadioComponent } from './shared/radio/radio.component';
 import { ApplySummaryComponent } from './project-detail/apply-summary/apply-summary.component';
 import { LoginComponent } from './security/login/login.component';
 
-
-import { ProjectService } from './projects/projects.service';
-import { ApplyService } from './project-detail/apply/apply.service';
-import { LoginService } from './security/login/login.service';
-import { ProjectCreatorService } from './project-creator/project-creator.service'
-import { ProjectCreatorComponent } from './project-creator/project-creator.component';
+import { ProjectCreatorSummaryComponent } from './project-creator-summary/project-creator-summary.component';
+import { SharedModule } from './shared/shared.module';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { SignUpSummaryComponent } from './sign-up-summary/sign-up-summary.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
     ApplyComponent,
     HeaderComponent,
     HomeComponent,
@@ -45,21 +37,20 @@ import { ProjectCreatorComponent } from './project-creator/project-creator.compo
     NewsComponent,
     NewsItemComponent,
     PartnersComponent,
-    InputComponent,
-    RadioComponent,
     ApplySummaryComponent,
     LoginComponent,
-    ProjectCreatorComponent
+    ProjectCreatorSummaryComponent,
+    SignUpComponent,
+    SignUpSummaryComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     HttpModule,
-    FormsModule,
-    ReactiveFormsModule,
-    RouterModule.forRoot(ROUTES)
+    SharedModule.forRoot(),
+    RouterModule.forRoot(ROUTES, {preloadingStrategy: PreloadAllModules})
   ],
-  providers: [ProjectService, ApplyService, LoginService, ProjectCreatorService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

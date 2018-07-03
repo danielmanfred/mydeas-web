@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { RadioOption } from './../shared/radio/radio-option.model';
 import { ProjectCreatorService } from './project-creator.service';
 import { Router } from '@angular/router';
@@ -14,8 +14,7 @@ export class ProjectCreatorComponent implements OnInit {
 
   projectForm: FormGroup
 
-    // Formação acadêmica
-    category: RadioOption[] = [
+  category: RadioOption[] = [
       {
         label: 'Coorking',
         value: '5b2c2910b7da5b127c0c28f4'
@@ -40,7 +39,7 @@ export class ProjectCreatorComponent implements OnInit {
 
   ngOnInit() {
     this.projectForm = this.formBuilder.group({
-      name: this.formBuilder.control(''),
+      name: this.formBuilder.control('', [Validators.required, Validators.minLength(3)]),
       slug: this.formBuilder.control(''),
       logo: this.formBuilder.control(''),
       description: this.formBuilder.control(''),
@@ -50,7 +49,7 @@ export class ProjectCreatorComponent implements OnInit {
 
   checkProject(project: Project) {
     this.projectCreatorService.checkProject(project).subscribe((projectId: string) => {
-      this.router.navigate(['/apply-summary'])
+      this.router.navigate(['/project-creator-summary'])
     })
     console.log(project)
   }
