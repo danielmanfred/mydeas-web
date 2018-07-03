@@ -1,0 +1,77 @@
+<section class="content-header">
+</section>
+
+<section class="content">
+  <section class="invoice">
+        <form [formGroup]="projectForm" novalidate>
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="page-header">
+                <i class="fa fa-pencil"></i> Crie um novo projeto
+              </h2>
+            </div>
+          </div>                
+
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="lead">Cadastro</p>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <mt-input-container errorMessage="Campo obrigatório com 5 caracteres" label="Nome">
+                <input class="form-control" formControlName="name" placeholder="Nome do Projeto">
+              </mt-input-container>
+            </div>
+
+            <div class="col-sm-6 col-xs-12">
+              <mt-input-container errorMessage="Slug inválida" label="Slug">
+                <input type="text" class="form-control" formControlName="slug" placeholder="Slug do Projeto">
+              </mt-input-container>
+            </div>
+          </div>
+
+          <div class="row invoice-info">
+            <div class="col-xs-12">
+              <p class="lead">Insira uma logo pro seus projeto</p>
+            </div>
+            <div class="col-sm-9 col-xs-12">
+              <mt-input-container errorMessage="Campo obrigatório com no mínimo 5 caracteres" label="URL da logo">
+                <input class="form-control" formControlName="logo" 
+                  placeholder="Logo" autocomplete="off"> 
+              </mt-input-container>
+            </div>
+            <!-- /.col -->
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="lead">Descrição do Projeto</p>
+            </div>
+            <div class="col-sm-9 col-xs-12">
+              <mt-input-container errorMessage="Campo obrigatório com no mínimo 5 caracteres" label="Descrição">
+                <input type="text" class="form-control" formControlName="description"
+                  placeholder="Descrição do Projeto" autocomplete="off">
+              </mt-input-container>
+            </div>
+              <!-- /.col -->
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 col-xs-12">
+              <p class="lead">Categoria do Projeto</p>
+              <div class="form-group">
+                <mt-radio [options]="category" formControlName="category"></mt-radio>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <button (click)="checkProject(projectForm.value)" class="btn btn-success pull-right" 
+              [disabled]="!projectForm.valid"><i class="fa fa-send"></i>
+               Criar Projeto
+            </button>
+          </div>
+        </div>
+    </section>
+</section>

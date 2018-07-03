@@ -29,6 +29,8 @@ import { LoginComponent } from './security/login/login.component';
 import { ProjectService } from './projects/projects.service';
 import { ApplyService } from './project-detail/apply/apply.service';
 import { LoginService } from './security/login/login.service';
+import { ProjectCreatorService } from './project-creator/project-creator.service'
+import { ProjectCreatorComponent } from './project-creator/project-creator.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,8 @@ import { LoginService } from './security/login/login.service';
     InputComponent,
     RadioComponent,
     ApplySummaryComponent,
-    LoginComponent
+    LoginComponent,
+    ProjectCreatorComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +59,7 @@ import { LoginService } from './security/login/login.service';
     ReactiveFormsModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [ProjectService, ApplyService, LoginService],
+  providers: [ProjectService, ApplyService, LoginService, ProjectCreatorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

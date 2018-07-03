@@ -1,5 +1,9 @@
 class Apply {
-    constructor(public answer1: string, public answer2: string, public academicOption: string) {
+    constructor(public name: string, 
+                public email: string, 
+                public answer1: string, 
+                public answer2: string, 
+                public academicOption: string) {
 
     }
 }
