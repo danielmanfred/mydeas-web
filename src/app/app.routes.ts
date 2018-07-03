@@ -1,3 +1,4 @@
+import { ProjectCreatorComponent } from './project-creator/project-creator.component';
 import { LoginComponent } from './security/login/login.component';
 import { ApplySummaryComponent } from './project-detail/apply-summary/apply-summary.component';
 import { ApplyComponent } from './project-detail/apply/apply.component';
@@ -52,5 +53,9 @@ export const ROUTES: Routes = [
     {
         path: 'apply-summary',
         component: ApplySummaryComponent
+    },
+    {
+        path: 'project-creator',
+        component: ProjectCreatorComponent
     }
 ]
