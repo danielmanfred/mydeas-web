@@ -3,11 +3,11 @@
 
 <section class="content">
   <section class="invoice">
-        <form [formGroup]="projectForm" novalidate>
+        <form [formGroup]="userForm" novalidate>
           <div class="row">
             <div class="col-xs-12">
               <h2 class="page-header">
-                <i class="fa fa-pencil"></i> Crie um novo projeto
+                <i class="fa fa-pencil"></i> Crie sua conta de usuário
               </h2>
             </div>
           </div>                
@@ -18,25 +18,25 @@
             </div>
             <div class="col-sm-6 col-xs-12">
               <mt-input-container errorMessage="Campo obrigatório com 3 caracteres" label="Nome">
-                <input class="form-control" formControlName="name" placeholder="Nome do Projeto">
+                <input class="form-control" formControlName="name" placeholder="Seu Nome">
               </mt-input-container>
             </div>
 
             <div class="col-sm-6 col-xs-12">
-              <mt-input-container errorMessage="Slug inválida" label="Slug">
-                <input type="text" class="form-control" formControlName="slug" placeholder="Slug do Projeto">
+              <mt-input-container errorMessage="Email inválida" label="Email">
+                <input type="text" class="form-control" formControlName="email" placeholder="Seu Email">
               </mt-input-container>
             </div>
           </div>
 
           <div class="row invoice-info">
             <div class="col-xs-12">
-              <p class="lead">Insira uma logo pro seus projeto</p>
+              <p class="lead">Informe sua Senha</p>
             </div>
             <div class="col-sm-9 col-xs-12">
-              <mt-input-container errorMessage="Campo obrigatório com no mínimo 5 caracteres" label="URL da logo">
-                <input class="form-control" formControlName="logo" 
-                  placeholder="Logo" autocomplete="off"> 
+              <mt-input-container errorMessage="Campo obrigatório com no mínimo 5 caracteres" label="Senha">
+                <input class="form-control" formControlName="password" 
+                  placeholder="Escolha uma Senha" autocomplete="off"> 
               </mt-input-container>
             </div>
             <!-- /.col -->
@@ -44,12 +44,12 @@
 
           <div class="row">
             <div class="col-xs-12">
-              <p class="lead">Descrição do Projeto</p>
+              <p class="lead">Insira sua Foto</p>
             </div>
             <div class="col-sm-9 col-xs-12">
-              <mt-input-container errorMessage="Campo obrigatório com no mínimo 5 caracteres" label="Descrição">
-                <input type="text" class="form-control" formControlName="description"
-                  placeholder="Descrição do Projeto" autocomplete="off">
+              <mt-input-container errorMessage="Campo obrigatório com no mínimo 5 caracteres" label="Foto">
+                <input type="text" class="form-control" formControlName="pic"
+                  placeholder="Coloque aqui a URL da foto" autocomplete="off">
               </mt-input-container>
             </div>
               <!-- /.col -->
@@ -57,9 +57,9 @@
 
           <div class="row">
             <div class="col-sm-6 col-xs-12">
-              <p class="lead">Categoria do Projeto</p>
+              <p class="lead">Sexo</p>
               <div class="form-group">
-                <mt-radio [options]="category" formControlName="category"></mt-radio>
+                <mt-radio [options]="gender" formControlName="gender"></mt-radio>
               </div>
             </div>
           </div>
@@ -67,9 +67,9 @@
 
         <div class="row">
           <div class="col-xs-12">
-            <button (click)="checkProject(projectForm.value)" class="btn btn-success pull-right" 
-              [disabled]="!projectForm.valid"><i class="fa fa-send"></i>
-               Criar Projeto
+            <button (click)="checkUser(userForm.value)" class="btn btn-success pull-right" 
+              [disabled]="!userForm.valid"><i class="fa fa-send"></i>
+               Criar Conta
             </button>
           </div>
         </div>
