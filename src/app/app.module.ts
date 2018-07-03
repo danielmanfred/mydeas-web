@@ -24,6 +24,7 @@ import { ProjectCreatorSummaryComponent } from './project-creator-summary/projec
 import { SharedModule } from './shared/shared.module';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignUpSummaryComponent } from './sign-up-summary/sign-up-summary.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { SignUpSummaryComponent } from './sign-up-summary/sign-up-summary.compon
     LoginComponent,
     ProjectCreatorSummaryComponent,
     SignUpComponent,
-    SignUpSummaryComponent
+    SignUpSummaryComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
