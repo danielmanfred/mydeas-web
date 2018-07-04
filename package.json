@@ -14,6 +14,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "^6.0.7",
     "@angular/common": "6.0.4",
     "@angular/compiler": "6.0.4",
     "@angular/core": "6.0.4",
@@ -31,6 +32,7 @@
     "rxjs": "6.2.0",
     "rxjs-compat": "^6.2.0",
     "ts-helpers": "1.1.2",
+    "web-animations-js": "^2.3.1",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
@@ -43,6 +45,7 @@
     "jasmine-core": "3.1.0",
     "jasmine-spec-reporter": "4.2.1",
     "json-server": "^0.14.0",
+    "jsonwebtoken": "^8.3.0",
     "karma": "1.4.1",
     "karma-chrome-launcher": "2.0.0",
     "karma-cli": "1.0.1",

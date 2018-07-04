@@ -17,19 +17,19 @@ export class ProjectCreatorComponent implements OnInit {
   category: RadioOption[] = [
       {
         label: 'Coorking',
-        value: '5b2c2910b7da5b127c0c28f4'
+        value: 'Coorking'
       },
       {
         label: 'Comunicação',
-        value: '5b2c2925b7da5b127c0c28f5'
+        value: 'Comunicação'
       },
       {
         label: 'Automóveis',
-        value: '5b2c2930b7da5b127c0c28f6'
+        value: 'Automóveis'
       },
       {
         label: 'Computação em núvem',
-        value: '5b2c293fb7da5b127c0c28f7'
+        value: 'Computação em núvem'
       }
     ]
 

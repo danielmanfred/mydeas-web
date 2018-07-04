@@ -3,11 +3,13 @@ export class User {
     }
 
     matches(another: User): boolean {
-        return another !== undefined && another.email === this.email && another.password === this.password
+        let b = another !== undefined && another.email === this.email && another.password === this.password
+        console.log(b)
+        return b
     }
 }
 
 export const users = {
-    "neymar@cbf.com": new User('Neymar', 'neymar@cbf.com', 'ramyen'),
-    "coutinho@cbf.com": new User('Coutinho', 'coutinho@cbf.com', 'ohnituoc')
+    "neymar@cbf.com": new User('Neymar', 'neymar@cbf.com', '1010'),
+    "coutinho@cbf.com": new User('Coutinho', 'coutinho@cbf.com', '1111')
 }

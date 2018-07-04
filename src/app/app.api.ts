@@ -1,1 +1,1 @@
-export const MYDEAS_API = 'https://localhost:3000'
+export const MYDEAS_API = 'http://localhost:3000'

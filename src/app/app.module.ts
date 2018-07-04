@@ -1,8 +1,10 @@
+import { AboutComponent } from './about/about.component';
+import { AboutModule } from './about/about.module';
+//import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule, PreloadAllModules } from '@angular/router';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { ROUTES } from './app.routes';
@@ -28,6 +30,7 @@ import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
+    AboutComponent,
     AppComponent,
     ApplyComponent,
     HeaderComponent,
@@ -47,6 +50,7 @@ import { ProfileComponent } from './profile/profile.component';
   ],
   imports: [
     BrowserModule,
+    //BrowserAnimationsModule,
     HttpClientModule,
     HttpModule,
     SharedModule.forRoot(),

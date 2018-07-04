@@ -18,6 +18,6 @@ function isValid(user) {
     if (!user) {
         return false;
     }
-    var dbUser = user[user.email];
+    var dbUser = users_1.users[user.email];
     return dbUser !== undefined && dbUser.matches(user);
 }
