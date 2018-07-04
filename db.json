@@ -59,6 +59,14 @@
       ],
       "category": "Computação em núvem",
       "owner": "Tricia McMillan"
+    },
+    {
+      "name": "Idea",
+      "slug": "",
+      "logo": "https://cdn-images-1.medium.com/max/1600/1*ATVm5uCixG7ntr40XlQbrg.jpeg",
+      "description": "Projeto de teste",
+      "category": "Comunicação",
+      "id": "P_v7UX3"
     }
   ],
   "news": [
@@ -321,6 +329,16 @@
       "answer2": "Github",
       "academic": "IT",
       "id": 18
+    }
+  ],
+  "users": [
+    {
+      "name": "Firmino",
+      "password": "0707",
+      "email": "firmino@cbf.com",
+      "gender": "M",
+      "pic": "http://www.tnh1.com.br/typo3temp/_processed_/csm_989797094_cf66da0353.jpg",
+      "id": 1
     }
   ]
 }

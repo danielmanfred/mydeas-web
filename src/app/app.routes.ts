@@ -1,3 +1,4 @@
+import { AboutComponent } from './about/about.component';
 import { SignUpSummaryComponent } from './sign-up-summary/sign-up-summary.component';
 import { ProjectCreatorSummaryComponent } from './project-creator-summary/project-creator-summary.component';
 import { LoginComponent } from './security/login/login.component';
@@ -18,7 +19,7 @@ export const ROUTES: Routes = [
     },
     {
         path: 'about',
-        loadChildren: './about/about.module#AboutModule'
+        component: AboutComponent
     },
     {
         path: 'login',

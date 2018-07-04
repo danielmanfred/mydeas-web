@@ -1,6 +1,8 @@
 import { Request, Response } from 'express'
 import { User, users } from './users'
 
+import * as jwt from 'jsonwebtoken'
+
 export const handleAuthentication = (req: Request, res: Response) => {
     const user: User = req.body
     if (isValid(user)) {
@@ -18,6 +20,6 @@ function isValid(user: User): boolean {
     if (!user) {
         return false
     }
-    const dbUser = user[user.email]
+    const dbUser = users[user.email]
     return dbUser !== undefined && dbUser.matches(user)
 }
